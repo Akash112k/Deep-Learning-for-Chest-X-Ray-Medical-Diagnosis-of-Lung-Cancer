@@ -1,0 +1,78 @@
+Training and evaluating resnet50
+Epoch 1/10, Train Loss: 1.2566, Train Acc: 0.87, Val AUC: 0.7503, Val Acc: 0.83, Precision: 0.38, Recall: 0.35, F1-Score: 0.30
+Epoch 2/10, Train Loss: 0.9028, Train Acc: 0.89, Val AUC: 0.7706, Val Acc: 0.86, Precision: 0.57, Recall: 0.23, F1-Score: 0.31
+Epoch 3/10, Train Loss: 0.7660, Train Acc: 0.89, Val AUC: 0.8293, Val Acc: 0.90, Precision: 0.73, Recall: 0.36, F1-Score: 0.45
+Epoch 4/10, Train Loss: 0.7045, Train Acc: 0.90, Val AUC: 0.8354, Val Acc: 0.90, Precision: 0.69, Recall: 0.38, F1-Score: 0.46
+Epoch 5/10, Train Loss: 0.6395, Train Acc: 0.90, Val AUC: 0.8279, Val Acc: 0.89, Precision: 0.75, Recall: 0.35, F1-Score: 0.45
+Epoch 6/10, Train Loss: 0.5623, Train Acc: 0.91, Val AUC: 0.8660, Val Acc: 0.91, Precision: 0.85, Recall: 0.42, F1-Score: 0.52
+Epoch 7/10, Train Loss: 0.5524, Train Acc: 0.91, Val AUC: 0.8777, Val Acc: 0.91, Precision: 0.88, Recall: 0.48, F1-Score: 0.59
+Epoch 8/10, Train Loss: 0.4580, Train Acc: 0.92, Val AUC: 0.8880, Val Acc: 0.92, Precision: 0.89, Recall: 0.52, F1-Score: 0.62
+Epoch 9/10, Train Loss: 0.4717, Train Acc: 0.92, Val AUC: 0.8994, Val Acc: 0.92, Precision: 0.88, Recall: 0.54, F1-Score: 0.64
+Epoch 10/10, Train Loss: 0.4362, Train Acc: 0.92, Val AUC: 0.9154, Val Acc: 0.93, Precision: 0.90, Recall: 0.56, F1-Score: 0.66
+AUC Scores for resnet50: [0.9737056209452751, 0.9433723343083578, 0.8976247700906619, 1.0, 0.8036399514600255, 0.8813906088751291, 0.8435138703844689, 0.8312217804434262, 0.9129725455841301, 0.8822452731663801, 0.9818576760011399, 0.9821698853823208, 0.9845415710796674, 0.9104821999117683]
+Mean AUC for resnet50: 0.9163384348309107
+Final Validation Accuracy for resnet50: 0.926708986936677
+Precision: 0.8964699105325621, Recall: 0.5607376839556527, F1-Score: 0.6625195472475534
+Training and evaluating vgg16
+
+Downloading: "https://download.pytorch.org/models/vgg16-397923af.pth" to /root/.cache/torch/hub/checkpoints/vgg16-397923af.pth
+
+100%
+528M/528M [00:02<00:00, 232MB/s]
+
+Epoch 1/10, Train Loss: 1.8729, Train Acc: 0.86, Val AUC: 0.6591, Val Acc: 0.87, Precision: 0.39, Recall: 0.15, F1-Score: 0.21
+Epoch 2/10, Train Loss: 1.2474, Train Acc: 0.88, Val AUC: 0.7078, Val Acc: 0.88, Precision: 0.31, Recall: 0.22, F1-Score: 0.26
+Epoch 3/10, Train Loss: 0.8907, Train Acc: 0.88, Val AUC: 0.7530, Val Acc: 0.89, Precision: 0.56, Recall: 0.24, F1-Score: 0.29
+Epoch 4/10, Train Loss: 0.8314, Train Acc: 0.88, Val AUC: 0.7846, Val Acc: 0.89, Precision: 0.60, Recall: 0.26, F1-Score: 0.32
+Epoch 5/10, Train Loss: 1.2962, Train Acc: 0.87, Val AUC: 0.7182, Val Acc: 0.88, Precision: 0.41, Recall: 0.22, F1-Score: 0.26
+Epoch 6/10, Train Loss: 0.9436, Train Acc: 0.88, Val AUC: 0.7411, Val Acc: 0.88, Precision: 0.53, Recall: 0.25, F1-Score: 0.29
+Epoch 7/10, Train Loss: 0.7471, Train Acc: 0.89, Val AUC: 0.7711, Val Acc: 0.89, Precision: 0.65, Recall: 0.31, F1-Score: 0.38
+Early stopping triggered after 7 epochs.
+AUC Scores for vgg16: [0.8949728640697148, 0.7220618015450386, 0.7330039402088936, 0.9997233562896064, 0.6707963908415417, 0.7078560371517029, 0.6637478587742673, 0.6329727969090458, 0.6278607630021183, 0.7170039544396337, 0.8104502903662534, 0.8673567279007695, 0.8886861148924091, 0.793441439514458]
+Mean AUC for vgg16: 0.7664238811361039
+Final Validation Accuracy for vgg16: 0.8891453753737999
+Precision: 0.7093085489726213, Recall: 0.31164663400315307, F1-Score: 0.38148672472926437
+Training and evaluating densenet121
+
+Downloading: "https://download.pytorch.org/models/densenet121-a639ec97.pth" to /root/.cache/torch/hub/checkpoints/densenet121-a639ec97.pth
+
+100%
+30.8M/30.8M [00:00<00:00, 74.9MB/s]
+
+Epoch 1/10, Train Loss: 0.8607, Train Acc: 0.89, Val AUC: 0.8381, Val Acc: 0.90, Precision: 0.73, Recall: 0.39, F1-Score: 0.46
+Epoch 2/10, Train Loss: 0.5726, Train Acc: 0.91, Val AUC: 0.8998, Val Acc: 0.92, Precision: 0.92, Recall: 0.50, F1-Score: 0.61
+Epoch 3/10, Train Loss: 0.4025, Train Acc: 0.92, Val AUC: 0.9233, Val Acc: 0.93, Precision: 0.88, Recall: 0.61, F1-Score: 0.69
+Epoch 4/10, Train Loss: 0.5044, Train Acc: 0.92, Val AUC: 0.9234, Val Acc: 0.93, Precision: 0.86, Recall: 0.61, F1-Score: 0.70
+Epoch 5/10, Train Loss: 0.3639, Train Acc: 0.93, Val AUC: 0.9170, Val Acc: 0.92, Precision: 0.80, Recall: 0.62, F1-Score: 0.67
+Epoch 6/10, Train Loss: 0.3201, Train Acc: 0.94, Val AUC: 0.9410, Val Acc: 0.94, Precision: 0.91, Recall: 0.67, F1-Score: 0.75
+Epoch 7/10, Train Loss: 0.2458, Train Acc: 0.94, Val AUC: 0.9564, Val Acc: 0.95, Precision: 0.87, Recall: 0.77, F1-Score: 0.81
+Epoch 8/10, Train Loss: 0.2316, Train Acc: 0.95, Val AUC: 0.9333, Val Acc: 0.93, Precision: 0.83, Recall: 0.68, F1-Score: 0.71
+Epoch 9/10, Train Loss: 0.3078, Train Acc: 0.94, Val AUC: 0.9626, Val Acc: 0.96, Precision: 0.93, Recall: 0.77, F1-Score: 0.83
+Epoch 10/10, Train Loss: 0.1635, Train Acc: 0.96, Val AUC: 0.9648, Val Acc: 0.96, Precision: 0.89, Recall: 0.80, F1-Score: 0.84
+AUC Scores for densenet121: [0.9893287833656266, 0.9976499412485312, 0.9562262831206658, 1.0, 0.8619526042862401, 0.9525348297213623, 0.9370967358203274, 0.9036210885729047, 0.9617484310348241, 0.9850661430343117, 0.9997327917913637, 0.9994905008635578, 0.9946932267459202, 0.9676630616419128]
+Mean AUC for densenet121: 0.9647717443748248
+Final Validation Accuracy for densenet121: 0.956901526677509
+Precision: 0.8891890677586025, Recall: 0.8004466607259036, F1-Score: 0.8363954338695713
+Training and evaluating vit
+
+Downloading: 100%
+502/502 [00:00<00:00, 14.6kB/s]
+Downloading: 100%
+346M/346M [00:09<00:00, 39.5MB/s]
+
+Some weights of the model checkpoint at google/vit-base-patch16-224-in21k were not used when initializing ViTForImageClassification: ['pooler.dense.weight', 'pooler.dense.bias']
+- This IS expected if you are initializing ViTForImageClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing ViTForImageClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ViTForImageClassification were not initialized from the model checkpoint at google/vit-base-patch16-224-in21k and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Epoch 1/10, Train Loss: 2.2006, Train Acc: 0.84, Val AUC: 0.6156, Val Acc: 0.84, Precision: 0.00, Recall: 0.00, F1-Score: 0.00
+Epoch 2/10, Train Loss: 2.1828, Train Acc: 0.84, Val AUC: 0.5804, Val Acc: 0.84, Precision: 0.00, Recall: 0.00, F1-Score: 0.00
+Epoch 3/10, Train Loss: 2.1912, Train Acc: 0.84, Val AUC: 0.5107, Val Acc: 0.84, Precision: 0.00, Recall: 0.00, F1-Score: 0.00
+Epoch 4/10, Train Loss: 2.1765, Train Acc: 0.84, Val AUC: 0.5823, Val Acc: 0.84, Precision: 0.00, Recall: 0.00, F1-Score: 0.00
+Early stopping triggered after 4 epochs.
+AUC Scores for vit: [0.7257656381040516, 0.4009537738443461, 0.6078187044409358, 0.7066829216325072, 0.6240242809196357, 0.5992272961816305, 0.611280096117244, 0.45933182829031605, 0.5121285462572509, 0.5087363471203847, 0.6559627511757161, 0.6485876903752551, 0.644504493266879, 0.5449841583893694]
+Mean AUC for vit: 0.5892848947225372
+Final Validation Accuracy for vit: 0.839095535386391
+Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
